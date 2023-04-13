@@ -7,7 +7,9 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import reset from './styles/reset.css'
 import styles from './styles/global.css';
+
 
 export default function App() {
   return (
@@ -30,6 +32,7 @@ export default function App() {
 
 export function links() {
   return [
+    { rel: "stylesheet", href: reset },
     { rel: "stylesheet", href: styles },
 
   ];
